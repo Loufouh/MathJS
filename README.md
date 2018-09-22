@@ -1,1 +1,1 @@
-# A Math librairy
+# A Math library
