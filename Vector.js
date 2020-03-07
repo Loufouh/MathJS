@@ -10,7 +10,7 @@ class Vector {
 		return new Vector(v.x + w.x, v.y + v.y);
 	}
 
-	static substract(v, w) {
+	static subtract(v, w) {
 		return new Vector(v.x - w.x, v.y - w.y);
 	}
 
