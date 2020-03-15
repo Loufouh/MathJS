@@ -6,6 +6,34 @@ class Vector {
 		this.y = y;
 	}
 
+	add(v) {
+		let w = Vector.add(this, v);
+
+		this.x = w.x;
+		this.y = w.y;
+	}
+
+	subtract(v) {
+		let w = Vector.subtract(this, v);
+
+		this.x = w.x;
+		this.y = w.y;
+	}
+
+	multiply(v) {
+		let w = Vector.multiply(this, v);
+
+		this.x = w.x;
+		this.y = w.y;
+	}
+
+	divide(v) {
+		let w = Vector.divide(this, v);
+
+		this.x = w.x;
+		this.y = w.y;
+	}
+
 	static add(v, w) {
 		return new Vector(v.x + w.x, v.y + w.y);
 	}
