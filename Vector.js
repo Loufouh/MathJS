@@ -34,6 +34,10 @@ class Vector {
 		this.y = w.y;
 	}
 
+	copy() {
+		return new Vector(this.x, this.y);
+	}
+
 	static add(v, w) {
 		return new Vector(v.x + w.x, v.y + w.y);
 	}
