@@ -38,6 +38,10 @@ class Vector {
 		return new Vector(this.x, this.y);
 	}
 
+	equals(v) {
+		return this.x == v.x && this.y == v.y;
+	}
+
 	static add(v, w) {
 		return new Vector(v.x + w.x, v.y + w.y);
 	}
