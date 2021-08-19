@@ -13,7 +13,7 @@ function randomInt(min, max) {
 /**
  * Pick a random value between two values.
  * @param min The lower boundary.
- * @param max The hihger boundary.
+ * @param max The higher boundary.
  * @returns {any} The  random value.
  */
 function random(min, max) {

@@ -72,7 +72,7 @@ class Vector {
 	 * @returns {boolean} True if vectors are equals, false otherwise.
 	 */
 	equals(v) {
-		return this.x == v.x && this.y == v.y;
+		return this.x === v.x && this.y === v.y;
 	}
 
 	/**
