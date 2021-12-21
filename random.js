@@ -6,7 +6,7 @@
  * @param max The higher boundary.
  * @returns {number} The random integer.
  */
-function randomInt(min, max) {
+export function randomInt(min, max) {
 	return Math.floor(random(min, max));
 }
 
@@ -16,6 +16,6 @@ function randomInt(min, max) {
  * @param max The higher boundary.
  * @returns {any} The  random value.
  */
-function random(min, max) {
+export function random(min, max) {
 	return Math.random() * (max - min) + min; 
 }

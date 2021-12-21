@@ -3,7 +3,7 @@
 /**
  * A canvas's graph drawer (requires DrawJS)
  */
-class GraphDrawer {
+export class GraphDrawer {
     /**
      * The constructor.
      * @param canvas The canvas on which to draw.

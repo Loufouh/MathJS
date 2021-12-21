@@ -3,7 +3,7 @@
 /**
  * Represents a couple a values.
  */
-class Vector {
+export class Vector {
 	/**
 	 * The constructor.
 	 * @param x The x component.
