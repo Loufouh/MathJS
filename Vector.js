@@ -67,12 +67,28 @@ export class Vector {
 	}
 
 	/**
-	 * Verify if two vectors are equals (by '==' operator)
+	 * Verify if two vectors are equals (by '===' operator)
 	 * @param v The vector to compare
 	 * @returns {boolean} True if vectors are equals, false otherwise.
 	 */
 	equals(v) {
 		return this.x === v.x && this.y === v.y;
+	}
+
+	/**
+	 * Calculate the magnitude (See magnitudeSq, it is faster).
+	 * @return {number} The magnitude.
+	 */
+	magnitude() {
+		return Math.sqrt(this.magnitudeSq());
+	}
+
+	/**
+	 * Calculate the magnitude squared.
+	 * @return {number} The magnitude squared.
+	 */
+	magnitudeSq() {
+		return Math.pow(this.x, 2) + Math.pow(this.y, 2);
 	}
 
 	/**
