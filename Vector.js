@@ -76,6 +76,22 @@ export class Vector {
 	}
 
 	/**
+	 * Calculate the angle.
+	 * @returns The angle in radians (0 if null vector).
+	 */
+	angle() {
+		let angle = Math.acos(
+			this.unit().x
+		);
+
+		if(this.y < 0) {
+			angle *= -1;
+		}
+
+		return angle;
+	}
+
+	/**
 	 * Calculate the magnitude (See magnitudeSq, it is faster).
 	 * @return {number} The magnitude.
 	 */
@@ -89,6 +105,14 @@ export class Vector {
 	 */
 	magnitudeSq() {
 		return Math.pow(this.x, 2) + Math.pow(this.y, 2);
+	}
+
+	/**
+	 * Calculate the corresponding unit vector (with magnitude of 1).
+	 * @returns {Vector} The corresponding unit vector.
+	 */
+	unit() {
+		return Vector.divide(this, this.magnitude());
 	}
 
 	/**
